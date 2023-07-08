@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>외대카풀</title>
+    <link rel="stylesheet" type="text/css" href="foundation.min.css">
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    <style>
+        /* 추가한 스타일 */
+        body {
+            background-color: #D2F3D4; /* 약간 높은 채도의 연한 초록색 배경색상 */
+        }
+
+        .signup-container {
+            max-width: 400px;
+            margin: 100px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #FFF; /* 백색 배경색상 */
+            position: relative;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF; /* 파란색 배경색상 */
+            color: #FFF;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .image-container {
+            position: absolute;
+            top: -90px;
+            left: -450px;
+            width: 150px;
+            height: 150px;
+            background-image: url('심벌_N.gif');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="image-container"></div>
+        <h2>회원가입</h2>
+        <form>
+            <div class="form-group">
+            
+            </div>
+            <div class="form-group">
+                <label for="password">비밀번호</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                
+            </div>
+            <button type="submit">회원가입</button>
+        </form>
+    </div>
+</body>
+</html>
