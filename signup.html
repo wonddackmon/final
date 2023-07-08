@@ -3,20 +3,19 @@
 <head>
     <title>외대카풀</title>
     <link rel="stylesheet" type="text/css" href="foundation.min.css">
-    <link rel="stylesheet" type="text/css" href="signup.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
     <style>
         /* 추가한 스타일 */
         body {
-            background-color: #D2F3D4; /* 약간 높은 채도의 연한 초록색 배경색상 */
+            background-color: #E4F5D4; /* 초록색 배경색상 */
         }
 
-        .signup-container {
+        .login-container {
             max-width: 400px;
             margin: 100px auto;
             padding: 20px;
             border: 1px solid #ccc;
-            background-color: #FFF; /* 백색 배경색상 */
-            position: relative;
+            background-color: #F0F5E6; /* 초록색 배경색상 */
         }
 
         h2 {
@@ -42,40 +41,27 @@
         button[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: #007BFF; /* 파란색 배경색상 */
-            color: #FFF;
+            background-color: #007bff;
+            color: #fff;
             border: none;
             border-radius: 4px;
             cursor: pointer;
         }
-
-        .image-container {
-            position: absolute;
-            top: -90px;
-            left: -450px;
-            width: 150px;
-            height: 150px;
-            background-image: url('심벌_N.gif');
-            background-size: cover;
-        }
     </style>
 </head>
 <body>
-    <div class="signup-container">
-        <div class="image-container"></div>
-        <h2>회원가입</h2>
+    <div class="login-container">
+        <h2>로그인</h2>
         <form>
             <div class="form-group">
-            
+                <label for="username">아이디</label>
+                <input type="text" id="username" name="username" required>
             </div>
             <div class="form-group">
                 <label for="password">비밀번호</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <div class="form-group">
-                
-            </div>
-            <button type="submit">회원가입</button>
+            <button type="submit">로그인</button>
         </form>
     </div>
 </body>
