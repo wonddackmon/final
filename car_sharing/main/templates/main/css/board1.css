@@ -1,0 +1,45 @@
+/* board.css */
+
+/* 게시판 스타일 */
+.board-container {
+  
+}
+
+h2 {
+    text-align: center;
+}
+
+.category-list {
+
+}
+
+.category-list li {
+    margin-bottom: 10px;
+}
+
+.board-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.board-image {
+    flex-basis: calc(33.33% - 10px);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.board-image:nth-child(1) {
+    background-image: url('01.png');
+}
+
+.board-image:nth-child(2) {
+    background-image: url('03.png');
+}
+
+.board-image:nth-child(3) {
+    background-image: url('07.png');
+}

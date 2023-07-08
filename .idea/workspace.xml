@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d562d17-406a-4cac-a4fe-8c92059ba4f5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/car_sharing/main/templates/main/css/board1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_sharing/main/templates/main/css/login1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_sharing/main/templates/main/css/style1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/car_sharing/main/templates/main/posting.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_sharing/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/car_sharing/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_sharing/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/car_sharing/main/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/car_sharing/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/car_sharing/main/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/car_sharing/main/templates/main/board.html" beforeDir="false" afterPath="$PROJECT_DIR$/car_sharing/main/templates/main/board.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/car_sharing/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/car_sharing/main/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/car_sharing/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/car_sharing/main/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,12 +34,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/OSS/final/car_sharing/main/templates/main",
+    "last_opened_file_path": "C:/OSS/final/car_sharing/main/templates/main/css",
     "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSS\final\car_sharing\main\templates\main\css" />
       <recent name="C:\OSS\final\car_sharing\main\templates\main" />
     </key>
   </component>
