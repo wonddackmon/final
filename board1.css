@@ -3,7 +3,7 @@
 /* 게시판 스타일 */
 .board-container {
     max-width: 800px;
-    margin: 80px auto;
+    margin: 55px auto;
     padding: 20px;
     background-color: #D2F3D4; /* 약간 높은 채도의 연한 초록색 배경색상 */
     border: 1px solid #ccc;
