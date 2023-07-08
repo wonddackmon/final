@@ -11,3 +11,6 @@ Django / tensorflow / Python / CSS / JavaScript / HTML
 # Sujin
 Practical and trendy services for hufs students 
 ex) Development of a platform where people share clothes that people are interested in and do second-hand transactions without throwing them away
+
+#won jun
+indet.html board.html login.html signup.html
