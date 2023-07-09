@@ -34,5 +34,5 @@ def new_post(request):
                 postname=request.POST['postname'],
                 contents=request.POST['contents'],
             )
-        return redirect('main/board.html')
+        return redirect('./')
     return render(request, 'main/writing.html')
