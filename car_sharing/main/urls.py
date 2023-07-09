@@ -14,4 +14,6 @@ urlpatterns=[
     path('board/<int:pk>', posting, name="posting"),
     # 글쓰기 페이지
     path('board/writing', new_post),
+    # 삭제 페이지
+    path('board/<int:pk>/remove/', remove_post),
 ]
