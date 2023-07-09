@@ -12,4 +12,6 @@ urlpatterns=[
     path('board/', board, name='blog'),
     # URL:80/blog/숫자로 접속하면 게시글-세부페이지(posting)
     path('board/<int:pk>', posting, name="posting"),
+    # 글쓰기 페이지
+    path('board/writing', new_post),
 ]
