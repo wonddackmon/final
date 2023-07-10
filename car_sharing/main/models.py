@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 # Create your models here.
@@ -5,6 +6,7 @@ from django.db import models
 class Post(models.Model):
     postname = models.CharField(max_length=50)
     contents = models.TextField()
+    user = models.ForeignKey(User, on_delete=models.DO_NOTHING, null=True)
 
     # 게시글의 제목(postname)이 Post object 대신하기
     def __str__(self):

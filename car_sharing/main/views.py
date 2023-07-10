@@ -24,15 +24,9 @@ def posting(request, pk):
 
 def new_post(request):
     if request.method == 'POST':
-        if request.POST['mainphoto']:
-            new_article=Post.objects.create(
-                postname=request.POST['postname'],
-                contents=request.POST['contents'],
-            )
-        else:
-            new_article=Post.objects.create(
-                postname=request.POST['postname'],
-                contents=request.POST['contents'],
+        new_article=Post.objects.create(
+            postname=request.POST['postname'],
+            contents=request.POST['contents'],
             )
         return redirect('./')
     return render(request, 'main/writing.html')
@@ -42,5 +36,5 @@ def remove_post(request, pk):
     post = Post.objects.get(pk=pk)
     if request.method == 'POST':
         post.delete()
-        return redirect('../')
+        return redirect('/board')
     return render(request, 'main/remove_post.html', {'Post': post})
