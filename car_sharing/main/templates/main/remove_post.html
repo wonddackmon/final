@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Removing</title>
+    <style>
+        body {
+            background-color: #041C3A;
+            text-align: center;
+            color: #D6B534;
+        }
+
+        form {
+            height: 60%;
+            margin: auto;
+            border-style: solid;
+            width: 50%;
+            background-color: #041C3A;
+            border-style: solid;
+            border-width: 4px;
+            border-color: #D6B534;
+            background-size: cover;
+            text-align: center;
+            font-size: 20px;
+            padding: 50px;
+            border-radius: 10px 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        p {
+            font-style: italic;
+            font-size: 100px;
+            color: #D6B534;
+            margin-bottom: 30px;
+
+        }
+
+        button {
+            margin-top: 5px;
+            color: #041C3A;
+            background-color: #D6B534;
+            height: 90%;
+            border-style: solid;
+            border-width: 4px;
+            border-color: #041C3A;
+            background-size: cover;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            border-radius: 10px 10px;
+        }
+
+        button:hover {
+            /* 링크에 마우스 올라가면 적용될 스타일 (네온사인 같은 그림자) */
+            box-shadow: 0px 0px 10px #D6B534, 0 0 10px #D6B534, 0px 0px 10px #D6B534;
+        }
+
+    </style>
 </head>
+
 <body>
+    <p>Delete Post</p>
     <form method="POST">
         {% csrf_token %}
-        <h3>{{ Post.postname }} - 삭제하기</h3>
-        <button>remove</button>
+        <h1> " {{ Post.postname }} " </h1>
+        <button>I'm really sure to delete this post.</button>
     </form>
 </body>
+
 </html>
