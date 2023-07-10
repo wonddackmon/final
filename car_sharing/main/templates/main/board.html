@@ -1,25 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>외대카풀 - 게시판</title>
-    <link rel="stylesheet" type="text/css" href="foundation.min.css">
-    <link rel="stylesheet" type="text/css" href="board.css">
+    <title>HUFS Sharing List</title>
     <style>
         /* 추가한 스타일 */
         body {
-            background-color: #f2f2f2; /* 동일한 배경색상 */
+            background-color: #041C3A;
+            text-align: center;
         }
 
         .board-container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background-color: #FFF; /* 백색 배경색상 */
-            border: 1px solid #ccc;
-        }
-
-        h2 {
-            text-align: center;
+            background-color: #D6B534;
+            border-radius: 20px 20px;
         }
 
         .category-list {
@@ -28,51 +24,45 @@
             margin-bottom: 20px;
         }
 
-            .category-list li {
-                margin-bottom: 10px;
-            }
-
-        .board-image-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-
-        .board-image {
-            flex-basis: calc(33.33% - 10px);
-            height: 200px;
-            background-size: cover;
-            background-position: center;
+        .category-list li {
             margin-bottom: 10px;
         }
 
-            .board-image:nth-child(1) {
-                background-image: url('01.png');
-            }
+        button {
+            margin-top: 5px;
+            color: #041C3A;
+            background-color: #D6B534;
+            height: 90%;
+            border-style: solid;
+            border-width: 4px;
+            border-color: #041C3A;
+            background-size: cover;
+            text-align: center;
+            font-size: 20px;
+            padding: 10px;
+            border-radius: 10px 10px;
+        }
 
-            .board-image:nth-child(2) {
-                background-image: url('03.png');
-            }
+        button:hover {
+            /* 링크에 마우스 올라가면 적용될 스타일 (네온사인 같은 그림자) */
+            box-shadow: 0px 0px 10px #041C3A, 0 0 10px #041C3A, 0px 0px 10px #041C3A;
+        }
 
-            .board-image:nth-child(3) {
-                background-image: url('07.png');
-            }
     </style>
 </head>
+
 <body>
+    <h1 style="margin-top: 70px; font-style: italic;color: #D6B534;
+   text-shadow: 0px 0px 20px #D6B534, 0 0 20px #D6B534, 0px 0px 20px #D6B534;">Sharing List</h1>
     <div class="board-container">
-        <h2>게시판</h2>
         {% for list in postlist %}
-            <ul class="category-list">
-                 <li><a href="{{list.pk}}">{{list.postname}}</a></li>
-            </ul>
+        <ul class="category-list">
+            <li><a href="{{list.pk}}">{{list.postname}}</a></li>
+        </ul>
         {% endfor %}
-        <div class="board-image-container">
-         
-        <button><a href="./writing">Uploading New Post</a></button>
-          
-        </div>
+
+        <button><a href="./writing" style="text-decoration: none; color: #041C3A;">Uploading New Post</a></button>
     </div>
 </body>
+
 </html>
