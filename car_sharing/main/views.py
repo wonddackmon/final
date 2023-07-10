@@ -27,6 +27,7 @@ def new_post(request):
         new_article=Post.objects.create(
             postname=request.POST['postname'],
             contents=request.POST['contents'],
+            user=request.user,
             )
         return redirect('./')
     return render(request, 'main/writing.html')
