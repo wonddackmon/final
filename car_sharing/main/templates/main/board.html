@@ -13,26 +13,24 @@
         .board-container {
             max-width: 800px;
             margin: 50px auto;
-            padding: 20px;
+            padding: 30px;
             background-color: #D6B534;
             border-radius: 20px 20px;
+            height: 450px;
+            overflow: auto;
         }
 
         .category-list {
             list-style: none;
-            padding: 0;
             margin-bottom: 20px;
-        }
-
-        .category-list li {
-            margin-bottom: 10px;
+            text-align: left;
         }
 
         button {
             margin-top: 5px;
             color: #041C3A;
             background-color: #D6B534;
-            height: 90%;
+            height: auto;
             border-style: solid;
             border-width: 4px;
             border-color: #041C3A;
@@ -48,16 +46,30 @@
             box-shadow: 0px 0px 10px #041C3A, 0 0 10px #041C3A, 0px 0px 10px #041C3A;
         }
 
+        .pl {
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 17px;
+            color: #041C3A;
+        }
+        hr{
+            margin-right:50px;
+            border: none;
+            background-color: #041C3A;
+            height:2px;
+        }
+
     </style>
 </head>
 
 <body>
-    <h1 style="margin-top: 70px; font-style: italic;color: #D6B534;
-   text-shadow: 0px 0px 20px #D6B534, 0 0 20px #D6B534, 0px 0px 20px #D6B534;">Sharing List</h1>
+    <h1 style="margin-top: 50px; font-style: italic;color: #D6B534;
+   text-shadow: 0px 0px 20px #D6B534, 0 0 20px #D6B534, 0px 0px 20px #D6B534; font-size:40px;">Sharing List</h1>
     <div class="board-container">
         {% for list in postlist %}
         <ul class="category-list">
-            <li><a href="{{list.pk}}">{{list.postname}}</a></li>
+            <li><a class="pl" href="{{list.pk}}">{{list.postname}}</a></li>
+            <hr>
         </ul>
         {% endfor %}
 
