@@ -7,7 +7,7 @@
     <style>
         /* 추가한 스타일 */
         body {
-            background-color: #041C3A; /* 초록색 배경색상 */
+            background-color: #041C3A;
             color: #D6B534;
         }
 
@@ -15,8 +15,9 @@
             max-width: 400px;
             margin: 100px auto;
             padding: 20px;
-            border: 1px solid #ccc;
-            background-color: #041C3A; /* 초록색 배경색상 */
+            border: 2px solid #D6B534;
+            background-color: #041C3A; 
+            border-radius: 4px;
         }
 
         h2 {
@@ -64,7 +65,7 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>로그인</h2>
+        <h2>회원가입</h2>
         <form method="post" action="{% url 'common:signup' %}">
             {% csrf_token %}
             {% include "common/form_errors.html" %}
