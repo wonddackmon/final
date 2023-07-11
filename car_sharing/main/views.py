@@ -1,4 +1,7 @@
 from django.shortcuts import render
+from django.utils import timezone
+from django.core.paginator import Paginator
+
 # View에 Model(Post 게시글) 가져오기
 from .models import Post
 
@@ -9,11 +12,16 @@ def index(request):
     return render(request,'main/index.html')
 
 def board(request):
+    all_boards = Post.objects.all().order_by("-postdate") # 모든 데이터 조회, 내림차순(-표시) 조회
+    paginator = Paginator(all_boards, 5)
+    page = int(request.GET.get('page', 1))
+    board_list = paginator.get_page(page)
+    return render(request, 'main/board.html', {'title':'Board List', 'board_list':board_list})
+    '''
     # 모든 Post를 가져와 postlist에 저장합니다
     postlist = Post.objects.all()
     # blog.html 페이지를 열 때, 모든 Post인 postlist도 같이 가져옵니다
-    return render(request, 'main/board.html', {'postlist': postlist})
-    #return render(request, 'main/board.html')
+    return render(request, 'main/board.html', {'postlist': postlist})'''
 
 # blog의 게시글(posting)을 부르는 posting 함수
 def posting(request, pk):
