@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.utils import timezone
 
 # Create your models here.
 # 게시글(Post)엔 제목(postname), 내용(contents)이 존재합니다
@@ -7,6 +8,7 @@ class Post(models.Model):
     postname = models.CharField(max_length=50)
     contents = models.TextField()
     user = models.ForeignKey(User, on_delete=models.DO_NOTHING, null=True)
+    postdate = models.DateTimeField(default=timezone.now())
 
     # 게시글의 제목(postname)이 Post object 대신하기
     def __str__(self):
