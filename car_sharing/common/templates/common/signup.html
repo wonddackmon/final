@@ -65,7 +65,7 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>로그인</h2>
+        <h2>회원가입</h2>
         <form method="post" action="{% url 'common:signup' %}">
             {% csrf_token %}
             {% include "common/form_errors.html" %}
